@@ -10,7 +10,7 @@ cp Sources/*.png stage0
 cd stage0
 for i in *.png; do 
   echo "adding shadow: $i"
-  convert "$i" \( +clone -background black -shadow 30x1+2+2 \) +swap -background none -layers merge +repage "../stage1/$i"
+  convert "$i" \( +clone -background black -shadow 35x1+3+1 \) +swap -background none -layers merge +repage "../stage1/$i"
 done
 cd ..
 
